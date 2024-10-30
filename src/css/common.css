@@ -17,6 +17,12 @@
     font-display: swap;
 }
 
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: white; }
+    100% { border-color: transparent; }
+}
+
 * {
     -webkit-tap-highlight-color: transparent; /* iOS/Android 터치 하이라이트 제거 */
     touch-action: manipulation; /* 터치 스크롤 등 기본 동작을 제한 */
@@ -166,3 +172,13 @@ textarea:focus {
     padding: 0;
 }
 
+.content-container {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 10px;
+}
