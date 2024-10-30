@@ -55,9 +55,13 @@ textarea:focus {
 }
 
 .main-container div {
-    font-family: 'NanumGothicExtraBold', sans-serif;
+    font-family: 'NanumGothicExtraBold', 'NanumGothic', sans-serif;
     color: #fff;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.main-container .main-smail-text {
+    font-size: 1em;
 }
