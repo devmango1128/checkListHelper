@@ -122,7 +122,6 @@ textarea:focus {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 60px;
     height: calc(100vh - 60px);
@@ -134,16 +133,22 @@ textarea:focus {
     justify-content: space-between;
     gap: 10px;
     padding: 10px;
+    width: 100%;
+    max-width: 1023px;
+    margin-top: 0;
 }
 
 .card-container .card-item {
-    width: calc(50% - 10px);
+    width: calc(50% - 10px); /* Two columns with a gap */
+    aspect-ratio: 1 / 1; /* Makes each card a square */
     padding: 20px;
     text-align: center;
-    margin: 5px 0;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-container {
