@@ -157,8 +157,19 @@ textarea:focus {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 1.1em;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card-container img.card-img {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+
+.card-container span {
+    width: 100%;
 }
 
 .menu-container {

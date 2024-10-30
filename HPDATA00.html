@@ -55,9 +55,20 @@
 
                 card.className = 'card-item';
                 card.id = item.code;
-                card.innerText = item.ko_name;
                 card.style.background = getBackgroundColor(item.code);
                 card.style.color = getFontColor(item.code);
+
+                const img = document.createElement('img');
+                img.alt = '';
+                img.src = item.icon_url;
+                img.className = 'card-img';
+
+                card.appendChild(img);
+
+                const span = document.createElement('span');
+                span.innerText = item.ko_name;
+
+                card.appendChild(span);
 
                 cardContainer.appendChild(card);
             });

@@ -5,11 +5,11 @@
   "code": "M",
   "ko_name": "남자",
   "en_name": "",
-  "icon_url": ""
+  "icon_url": "src/images/man.png"
 },{
   "code": "W",
   "ko_name": "여자",
   "en_name": "",
-  "icon_url": ""
+  "icon_url": "src/images/woman.png"
 }]
 }
