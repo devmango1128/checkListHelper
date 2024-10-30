@@ -29,7 +29,17 @@
 
             const cardContainer = document.getElementById('card-container');
 
-            data.forEach(item => {
+            const title = document.createElement('div');
+            title.className = 'title-area';
+
+            const title_span = document.createElement('span');
+            title_span.innerText = data.ko_title;
+            title.appendChild(title_span);
+
+            cardContainer.appendChild(title);
+
+            data.data.forEach(item => {
+
                 const card = document.createElement('div');
 
                 card.className = 'card-item';

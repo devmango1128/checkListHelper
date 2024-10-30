@@ -1,10 +1,10 @@
 const codeColor = [{
     code : 'M',
-    background : '#ff6666',
+    background : '#6696ff',
     color : '#fff'
 },{
     code : 'W',
-    background : '#6696ff',
+    background : '#ff6666',
     color : '#fff'
 }];
 

@@ -124,6 +124,8 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: calc(100vh - 60px);
 }
 
@@ -131,16 +133,23 @@ textarea:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
     width: 100%;
     max-width: 1023px;
     margin-top: 0;
 }
 
+.card-container .title-area {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 1.2rem;
+}
+
 .card-container .card-item {
-    width: calc(50% - 10px); /* Two columns with a gap */
-    aspect-ratio: 1 / 1; /* Makes each card a square */
+    width: calc(50% - 50px);
+    aspect-ratio: 1 / 1;
     padding: 20px;
     text-align: center;
     border-radius: 8px;

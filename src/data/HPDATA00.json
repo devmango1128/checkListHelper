@@ -1,4 +1,7 @@
-[{
+{
+"ko_title": "성별을 선택해주세요 :)",
+"en_title": "",
+"data" : [{
   "code": "M",
   "ko_name": "남자",
   "en_name": "",
@@ -9,3 +12,4 @@
   "en_name": "",
   "icon_url": ""
 }]
+}
