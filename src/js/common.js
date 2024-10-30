@@ -9,6 +9,6 @@ function goBack() {
     if (previousPage && previousPage !== "") {
         window.location.href = previousPage;
     } else {
-        window.location.href = 'main.html';
+        window.location.href = 'HPDATA00.html';
     }
 }

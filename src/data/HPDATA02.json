@@ -1,0 +1,51 @@
+[[{
+  "code": "001001",
+  "ko_name": "국내",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "001002",
+  "ko_name": "해외",
+  "en_name": "",
+  "icon_url": ""
+}], [{
+  "code": "002001",
+  "ko_name": "출·퇴근",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "002002",
+  "ko_name": "업무",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "002003",
+  "ko_name": "회의",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "002004",
+  "ko_name": "출장",
+  "en_name": "",
+  "icon_url": ""
+}], [{
+  "code": "003001",
+  "ko_name": "경사",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "003002",
+  "ko_name": "조사",
+  "en_name": "",
+  "icon_url": ""
+}], [{
+  "code": "004001",
+  "ko_name": "장보기",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "004002",
+  "ko_name": "쇼핑",
+  "en_name": "",
+  "icon_url": ""
+}]]

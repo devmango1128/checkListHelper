@@ -1,0 +1,21 @@
+[{
+  "code": "001",
+  "ko_name": "여행",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "002",
+  "ko_name": "회사",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "003",
+  "ko_name": "경조사",
+  "en_name": "",
+  "icon_url": ""
+}, {
+  "code": "004",
+  "ko_name": "쇼핑",
+  "en_name": "",
+  "icon_url": ""
+}]

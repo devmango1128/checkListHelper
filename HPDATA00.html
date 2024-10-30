@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Check Helper - 체크 리스트 도우미</title>
+        <link rel="stylesheet" href="src/css/common.css" />
+    </head>
+    <body>
+        <div class="header-container">
+            <img src="src/images/back.png" class="back" onclick="goBack()" alt=""/>
+            <span onclick="goMenu('HPDATA01.html')">Check Helper</span>
+            <div class="empty"></div>
+        </div>
+        <div class="content-container">
+            <div class="card-container"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="src/js/common.js"></script>
+    </body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', async function() {
+        const url = "src/data/HPDATA00.json";
+        $.getJSON(url, async function(data) {
+
+        });
+    });
+</script>
