@@ -65,3 +65,104 @@ textarea:focus {
 .main-container .main-smail-text {
     font-size: 1em;
 }
+
+.header-container {
+    position: fixed;
+    height: 50px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1023px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container span {
+    display: inline-block;
+    font-weight: bold;
+    color: #282828;
+    font-size: 1.2rem;
+    letter-spacing: -1.0px;
+    line-height: 50px;
+    height: 50px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-container img.menu {
+    height: 35px;
+    width: 25px;
+    float: right;
+    margin-right: 9px;
+}
+
+.header-container img.back {
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin-left: 5px;
+}
+
+.header-container div.empty {
+    height: 25px;
+    width: 40px;
+}
+
+.menu-container {
+    font-family: 'NanumGothicExtraBold', sans-serif;
+    background-color: #e5e5e5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+}
+
+.menu-container span.title {
+    margin: 60px 0 10px 0;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.menu-container span.dev-title {
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.menu-container .menu-box {
+    background-color: #fff;
+    padding: 0 10px 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    font-family: 'NanumGothic', sans-serif;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+}
+
+.menu-container ul {
+    list-style: none;
+    display: inline;
+}
+
+.menu-container li {
+    list-style: none;
+    padding-bottom:10px;
+}
+
+.menu-container li.b-border {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
