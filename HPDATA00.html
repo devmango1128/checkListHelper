@@ -8,22 +8,38 @@
     </head>
     <body>
         <div class="header-container">
-            <img src="src/images/back.png" class="back" onclick="goBack()" alt=""/>
-            <span onclick="goMenu('HPDATA01.html')">Check Helper</span>
             <div class="empty"></div>
+            <span onclick="goMenu('HPDATA00.html')">Check Helper</span>
+            <img src="src/images/menu_icon.png" alt="" class="menu" onclick="goMenu('menu.html')"/>
         </div>
         <div class="content-container">
-            <div class="card-container"></div>
+            <div id="card-container" class="card-container"></div>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="src/js/color.js"></script>
         <script src="src/js/common.js"></script>
     </body>
 </html>
 <script>
     document.addEventListener('DOMContentLoaded', async function() {
-        const url = "src/data/HPDATA00.json";
+
+        const url = 'src/data/HPDATA00.json';
+
         $.getJSON(url, async function(data) {
 
+            const cardContainer = document.getElementById('card-container');
+
+            data.forEach(item => {
+                const card = document.createElement('div');
+
+                card.className = 'card-item';
+                card.id = item.code;
+                card.innerText = item.ko_name;
+                card.style.background = getBackgroundColor(item.code);
+                card.style.color = getFontColor(item.code);
+
+                cardContainer.appendChild(card);
+            });
         });
     });
 </script>
