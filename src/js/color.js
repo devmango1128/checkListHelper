@@ -22,6 +22,46 @@ const codeColor = [{
     code : '004',
     background : '#fcdcc1',
     color : '#ff8c34'
+},{
+    code : '001001',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '001002',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '002001',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '002002',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '002003',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '002004',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '003001',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '003002',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '004001',
+    background : '#cee9fd',
+    color : '#419aff'
+},{
+    code : '004002',
+    background : '#cee9fd',
+    color : '#419aff'
 }];
 
 function getBackgroundColor(code) {

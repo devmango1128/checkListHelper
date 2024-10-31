@@ -28,7 +28,8 @@
 <script>
     document.addEventListener('DOMContentLoaded', async function() {
 
-        const url = 'src/data/HPDATA01.json';
+        const url = 'src/data/HPDATA02.json';
+        const code = localStorage.getItem('code');
 
         $.getJSON(url, async function(data) {
 
@@ -51,28 +52,31 @@
             type();
 
             data.data.forEach(item => {
+                item.forEach(sItem => {
+                    if(sItem.parent_code === code) {
+                        const card = document.createElement('div');
 
-                const card = document.createElement('div');
+                        card.className = 'card-item';
+                        card.id = sItem.code;
+                        card.style.background = getBackgroundColor(sItem.code);
+                        card.style.color = getFontColor(sItem.code);
+                        card.onclick = () => nextStep('02');
 
-                card.className = 'card-item';
-                card.id = item.code;
-                card.style.background = getBackgroundColor(item.code);
-                card.style.color = getFontColor(item.code);
-                card.onclick = () => nextStep('02', item.code);
+                        const icon = document.createElement('i');
+                        icon.className = sItem.icon_html;
+                        icon.style.color = getFontColor(sItem.code);
 
-                const icon = document.createElement('i');
-                icon.className = item.icon_html;
-                icon.style.color = getFontColor(item.code);
+                        card.appendChild(icon);
 
-                card.appendChild(icon);
+                        const span = document.createElement('span');
+                        span.className = 'category-span'
+                        span.innerText = sItem.ko_name;
 
-                const span = document.createElement('span');
-                span.className = 'category-span'
-                span.innerText = item.ko_name;
+                        card.appendChild(span);
 
-                card.appendChild(span);
-
-                cardContainer.appendChild(card);
+                        cardContainer.appendChild(card);
+                    }
+                });
             });
         });
     });

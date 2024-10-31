@@ -13,8 +13,8 @@ function goBack() {
     }
 }
 
-function nextStep(code) {
+function nextStep(step, code) {
 
-    localStorage.setItem(`HPDATA${code}`, code);
-    window.location.href = `HPDATA${code}.html`;
+    localStorage.setItem('code', code);
+    window.location.href = `HPDATA${step}.html`;
 }
