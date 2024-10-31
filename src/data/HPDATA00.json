@@ -3,13 +3,17 @@
 "en_title": "",
 "data" : [{
   "code": "M",
+  "parent_code": "",
   "ko_name": "남자",
   "en_name": "",
-  "icon_url": "src/images/man.png"
+  "icon_url": "src/images/man.png",
+  "icon_html": ""
 },{
   "code": "W",
+  "parent_code": "",
   "ko_name": "여자",
   "en_name": "",
-  "icon_url": "src/images/woman.png"
+  "icon_url": "src/images/woman.png",
+  "icon_html": ""
 }]
 }

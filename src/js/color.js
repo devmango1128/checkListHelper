@@ -8,20 +8,20 @@ const codeColor = [{
     color : '#fff'
 },{
     code : '001',
-    background : '#f6b7b1',
-    color : '#fff'
+    background : '#fcdcc1',
+    color : '#ff8c34'
 },{
     code : '002',
-    background : '#afbefc',
-    color : '#fff'
+    background : '#fcdcc1',
+    color : '#ff8c34'
 },{
     code : '003',
-    background : '#dbfcbd',
-    color : '#fff'
+    background : '#fcdcc1',
+    color : '#ff8c34'
 },{
     code : '004',
-    background : '#f8edb5',
-    color : '#fff'
+    background : '#fcdcc1',
+    color : '#ff8c34'
 }];
 
 function getBackgroundColor(code) {

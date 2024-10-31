@@ -1,51 +1,94 @@
-[[{
-  "code": "001001",
-  "ko_name": "국내",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "001002",
-  "ko_name": "해외",
-  "en_name": "",
-  "icon_url": ""
-}], [{
-  "code": "002001",
-  "ko_name": "출·퇴근",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "002002",
-  "ko_name": "업무",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "002003",
-  "ko_name": "회의",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "002004",
-  "ko_name": "출장",
-  "en_name": "",
-  "icon_url": ""
-}], [{
-  "code": "003001",
-  "ko_name": "경사",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "003002",
-  "ko_name": "조사",
-  "en_name": "",
-  "icon_url": ""
-}], [{
-  "code": "004001",
-  "ko_name": "장보기",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "004002",
-  "ko_name": "쇼핑",
-  "en_name": "",
-  "icon_url": ""
-}]]
+{
+  "ko_title": "카테고리를 선택해주세요.",
+  "en_title": "",
+  "data": [
+    [
+      {
+        "code": "001001",
+        "parent_code": "001",
+        "ko_name": "국내",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      },
+      {
+        "code": "001002",
+        "parent_code": "001",
+        "ko_name": "해외",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      }
+    ],
+    [
+      {
+        "code": "002001",
+        "parent_code": "002",
+        "ko_name": "일간",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      },
+      {
+        "code": "002002",
+        "parent_code": "002",
+        "ko_name": "주간",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      },
+      {
+        "code": "002003",
+        "parent_code": "002",
+        "ko_name": "월간",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      },
+      {
+        "code": "002004",
+        "parent_code": "002",
+        "ko_name": "분기",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      }
+    ],
+    [
+      {
+        "code": "003001",
+        "parent_code": "003",
+        "ko_name": "학습",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      },
+      {
+        "code": "003002",
+        "parent_code": "003",
+        "ko_name": "취미",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      }
+    ],
+    [
+      {
+        "code": "004001",
+        "parent_code": "004",
+        "ko_name": "경사",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      },
+      {
+        "code": "004002",
+        "parent_code": "004",
+        "ko_name": "조사",
+        "en_name": "",
+        "icon_url": "",
+        "icon_html": ""
+      }
+    ]
+  ]
+}
