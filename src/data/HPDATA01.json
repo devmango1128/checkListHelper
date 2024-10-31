@@ -7,27 +7,27 @@
     "ko_name": "여행",
     "en_name": "travel",
     "icon_url": "",
-    "icon_html": "fa-solid fa-plane fa-3x"
+    "icon_html": "fa-solid fa-person-walking-luggage fa-3x"
   }, {
     "code": "002",
     "parent_code": "002",
     "ko_name": "업무",
     "en_name": "",
     "icon_url": "",
-    "icon_html": ""
+    "icon_html": "fa-solid fa-briefcase fa-3x"
   },{
     "code": "003",
     "parent_code": "003",
     "ko_name": "자기계발",
     "en_name": "",
     "icon_url": "",
-    "icon_html": ""
+    "icon_html": "fa-solid fa-book fa-3x"
   },{
     "code": "004",
     "parent_code": "004",
     "ko_name": "경·조사",
     "en_name": "",
     "icon_url": "",
-    "icon_html": ""
+    "icon_html": "fa-solid fa-heart fa-3x"
   }]
 }
