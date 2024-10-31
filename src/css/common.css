@@ -171,11 +171,14 @@ textarea:focus {
 
 .card-container i::before {
     padding: 10px;
-    margin-bottom: 10px;
 }
 
 .card-container span {
     width: 100%;
+}
+
+.card-container span.category-span {
+    margin-top: 10px;
 }
 
 .menu-container {
