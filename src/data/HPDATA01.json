@@ -1,21 +1,25 @@
-[{
-  "code": "001",
-  "ko_name": "여행",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "002",
-  "ko_name": "회사",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "003",
-  "ko_name": "경조사",
-  "en_name": "",
-  "icon_url": ""
-}, {
-  "code": "004",
-  "ko_name": "쇼핑",
-  "en_name": "",
-  "icon_url": ""
-}]
+{
+  "ko_title": "어떤 항목의 체크리스트가 필요하세요?",
+  "en_title": "",
+  "data" : [{
+    "code": "001",
+    "ko_name": "여행",
+    "en_name": "",
+    "icon_url": ""
+  }, {
+    "code": "002",
+    "ko_name": "회사",
+    "en_name": "",
+    "icon_url": ""
+  }, {
+    "code": "003",
+    "ko_name": "경조사",
+    "en_name": "",
+    "icon_url": ""
+  }, {
+    "code": "004",
+    "ko_name": "쇼핑",
+    "en_name": "",
+    "icon_url": ""
+  }]
+}

@@ -12,3 +12,9 @@ function goBack() {
         window.location.href = 'HPDATA00.html';
     }
 }
+
+function nextStep(code) {
+
+    localStorage.setItem(`HPDATA${code}`, code);
+    window.location.href = `HPDATA${code}.html`;
+}

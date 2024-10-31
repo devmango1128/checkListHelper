@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>체크헬퍼 - 체크 리스트 도우미</title>
-        <link rel="stylesheet" href="src/css/common.css" />
-    </head>
-    <body>
-        <div class="header-container">
-            <div class="empty"></div>
-            <span onclick="goMenu('HPDATA00.html')">체크헬퍼</span>
-            <img src="src/images/menu_icon.png" alt="" class="menu" onclick="goMenu('menu.html')"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크헬퍼 - 체크 리스트 도우미</title>
+    <link rel="stylesheet" href="src/css/common.css" />
+</head>
+<body>
+<div class="header-container">
+    <div class="empty"></div>
+    <span onclick="goMenu('HPDATA00.html')">체크헬퍼</span>
+    <img src="src/images/menu_icon.png" alt="" class="menu" onclick="goMenu('menu.html')"/>
+</div>
+<div class="content-container">
+    <div id="card-container" class="card-container">
+        <div class="title-area">
+            <span id="animated-text"></span>
         </div>
-        <div class="content-container">
-            <div id="card-container" class="card-container">
-                <div class="title-area">
-                    <span id="animated-text"></span>
-                </div>
-            </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="src/js/color.js"></script>
-        <script src="src/js/common.js"></script>
-    </body>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="src/js/color.js"></script>
+<script src="src/js/common.js"></script>
+</body>
 </html>
 <script>
     document.addEventListener('DOMContentLoaded', async function() {
 
-        const url = 'src/data/HPDATA00.json';
+        const url = 'src/data/HPDATA01.json';
 
         $.getJSON(url, async function(data) {
 
@@ -57,7 +57,7 @@
                 card.id = item.code;
                 card.style.background = getBackgroundColor(item.code);
                 card.style.color = getFontColor(item.code);
-                card.onclick = () => nextStep('01');
+                card.onclick = () => nextStep('02');
 
                 const img = document.createElement('img');
                 img.alt = '';
