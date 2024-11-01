@@ -15,25 +15,25 @@ const codeColor = [{
     background : '#ffffff',
     color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#c0c0c0'
+    iconColor : '#a1a1a1'
 },{
     code : '002',
     background : '#ffffff',
     color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '003',
     background : '#ffffff',
     color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '004',
     background : '#ffffff',
     color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '001001',
     background : '#cee9fd',

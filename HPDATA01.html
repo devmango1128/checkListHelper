@@ -9,9 +9,13 @@
 </head>
 <body>
 <div class="header-container">
-    <div class="empty"></div>
+    <div class="back" onclick="goMenu('menu.html')">
+        <i class="fa-solid fa-angle-left fa-xl"></i>
+    </div>
     <span onclick="goMenu('HPDATA00.html')">체크헬퍼</span>
-    <img src="src/images/menu_icon.png" alt="" class="menu" onclick="goMenu('menu.html')"/>
+    <div class="menu" onclick="goMenu('menu.html')">
+        <i class="fa-solid fa-bars fa-xl"></i>
+    </div>
 </div>
 <div class="content-container">
     <div id="card-container" class="card-container">
