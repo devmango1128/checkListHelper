@@ -165,11 +165,7 @@ textarea:focus {
     margin-bottom: 5px;
 }
 
-.card-container .card-item:hover {
-    background-color: #e2e2e2 !important;
-}
-
-.card-container .selected:hover {
+.card-container .selected:active {
     background-color: #ffffff !important;
 }
 
