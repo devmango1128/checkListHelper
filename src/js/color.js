@@ -8,20 +8,20 @@ const codeColor = [{
     color : '#fff'
 },{
     code : '001',
-    background : '#fcdcc1',
-    color : '#ff8c34'
+    background : '#ffffff',
+    color : '#4b4b4b'
 },{
     code : '002',
-    background : '#fcdcc1',
-    color : '#ff8c34'
+    background : '#ffffff',
+    color : '#4b4b4b'
 },{
     code : '003',
-    background : '#fcdcc1',
-    color : '#ff8c34'
+    background : '#ffffff',
+    color : '#4b4b4b'
 },{
     code : '004',
-    background : '#fcdcc1',
-    color : '#ff8c34'
+    background : '#ffffff',
+    color : '#4b4b4b'
 },{
     code : '001001',
     background : '#cee9fd',
