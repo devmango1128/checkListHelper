@@ -58,7 +58,7 @@
                 card.id = item.code;
                 card.style.background = getBackgroundColor(item.code);
                 card.style.color = getFontColor(item.code);
-                card.style.borderColor = getBorderColor(item.code);
+                card.style.border = `solid 1px ${getBorderColor(item.code)}`;
                 card.onclick = () => nextStep('02', item.code);
 
                 const icon = document.createElement('i');
