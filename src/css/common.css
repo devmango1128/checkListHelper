@@ -146,6 +146,10 @@ textarea:focus {
     color: #282828;
 }
 
+.card-container .typing {
+    font-weight: bold;
+}
+
 .card-container .card-item {
     width: calc(50% - 50px);
     aspect-ratio: 1 / 1;
