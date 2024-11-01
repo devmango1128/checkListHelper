@@ -106,6 +106,42 @@ const codeColor = [{
     color : '#4b4b4b',
     borderColor : '#cecece',
     iconColor : '#a1a1a1'
+},{
+    code : '001001001',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
+},{
+    code : '001001002',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
+},{
+    code : '001001003',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
+},{
+    code : '001001004',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
+},{
+    code : '001001005',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
+},{
+    code : '001001006',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
 }];
 
 function getBackgroundColor(code) {

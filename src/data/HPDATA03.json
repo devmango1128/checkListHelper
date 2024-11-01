@@ -1,93 +1,55 @@
 {
-  "ko_title": "이제 디테일하게 선택해볼까요?",
+  "ko_title": "이제 거의 다 됐어요.",
   "en_title": "",
   "data": [
     [
       {
-        "code": "001001",
+        "code": "001001001",
         "parent_code": "001",
-        "ko_name": "국내",
+        "ko_name": "워터파크·해변",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-person-walking fa-2x"
+        "icon_html": "fa-solid fa-person-swimming fa-2x"
       },
       {
-        "code": "001002",
+        "code": "001001002",
         "parent_code": "001",
-        "ko_name": "해외",
+        "ko_name": "트래킹·하이킹",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-plane fa-2x"
-      }
-    ],
-    [
-      {
-        "code": "002001",
-        "parent_code": "002",
-        "ko_name": "일간",
-        "en_name": "",
-        "icon_url": "",
-        "icon_html": "fa-solid fa-calendar-days fa-2x"
+        "icon_html": "fa-solid fa-person-running fa-2x"
       },
       {
-        "code": "002002",
-        "parent_code": "002",
-        "ko_name": "주간",
+        "code": "001001003",
+        "parent_code": "001",
+        "ko_name": "캠핑·글램핑",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-calendar-week fa-2x"
+        "icon_html": "fa-solid fa-campground fa-2x"
       },
       {
-        "code": "002003",
-        "parent_code": "002",
-        "ko_name": "월간",
+        "code": "001001004",
+        "parent_code": "001",
+        "ko_name": "보드·스키",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-calendar fa-2x"
+        "icon_html": "fa-solid fa-person-skiing fa-2x"
       },
       {
-        "code": "002004",
-        "parent_code": "002",
-        "ko_name": "연간",
+        "code": "001001005",
+        "parent_code": "001",
+        "ko_name": "힐링",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-regular fa-calendar-check fa-2x"
-      }
-    ],
-    [
-      {
-        "code": "003001",
-        "parent_code": "003",
-        "ko_name": "학습",
-        "en_name": "",
-        "icon_url": "",
-        "icon_html": "fa-solid fa-pen-to-square fa-2x"
+        "icon_html": "fa-solid fa-battery-full fa-2x"
       },
       {
-        "code": "003002",
-        "parent_code": "003",
-        "ko_name": "취미",
+        "code": "001001006",
+        "parent_code": "001",
+        "ko_name": "출장",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-basketball fa-2x"
-      }
-    ],
-    [
-      {
-        "code": "004001",
-        "parent_code": "004",
-        "ko_name": "경사",
-        "en_name": "",
-        "icon_url": "",
-        "icon_html": ""
-      },
-      {
-        "code": "004002",
-        "parent_code": "004",
-        "ko_name": "조사",
-        "en_name": "",
-        "icon_url": "",
-        "icon_html": ""
+        "icon_html": "fa-solid fa-business-time fa-2x"
       }
     ]
   ]

@@ -33,43 +33,10 @@
     document.addEventListener('DOMContentLoaded', async function() {
 
         const url = 'src/data/HPDATA03.json';
-        const code = localStorage.getItem('code');
 
         $.getJSON(url, async function(data) {
-
-            const cardContainer = document.getElementById('card-container');
-
             typing(data.ko_title);
-
-            data.data.forEach(item => {
-                item.forEach(sItem => {
-                    if(sItem.parent_code === code) {
-
-                        const card = document.createElement('div');
-
-                        card.className = 'card-item';
-                        card.id = item.code;
-                        card.style.background = getBackgroundColor(sItem.code);
-                        card.style.color = getFontColor(sItem.code);
-                        card.style.border = `solid 1px ${getBorderColor(sItem.code)}`;
-                        card.onclick = () => nextStep('04', sItem.code);
-
-                        const icon = document.createElement('i');
-                        icon.className = sItem.icon_html;
-                        icon.style.color = getIconColor(sItem.code);
-
-                        card.appendChild(icon);
-
-                        const span = document.createElement('span');
-                        span.className = 'category-span'
-                        span.innerText = sItem.ko_name;
-
-                        card.appendChild(span);
-
-                        cardContainer.appendChild(card);
-                    }
-                });
-            });
+            createListCard(data.data, '04');
         });
     });
 </script>

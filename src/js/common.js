@@ -98,7 +98,7 @@ function createListCard(data, step) {
                 card.style.background = getBackgroundColor(sItem.code);
                 card.style.color = getFontColor(sItem.code);
                 card.style.border = `solid 1px ${getBorderColor(sItem.code)}`;
-                card.onclick = () => nextStep(step, sItem.code);
+                card.onclick = () => nextStep(step, sItem.parent_code);
 
                 const icon = document.createElement('i');
                 icon.className = sItem.icon_html;
@@ -109,7 +109,7 @@ function createListCard(data, step) {
                 span.className = 'category-span'
                 span.innerText = sItem.ko_name;
                 card.appendChild(span);
-
+                console.log(card);
                 cardContainer.appendChild(card);
             }
         });
