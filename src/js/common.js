@@ -40,9 +40,9 @@ function type() {
     }
 }
 
-function createCard(data, step, type) {
+let cardContainer = document.getElementById('card-container');
 
-    const cardContainer = document.getElementById('card-container');
+function createCard(data, step, type) {
 
     data.forEach(item => {
 
@@ -52,7 +52,7 @@ function createCard(data, step, type) {
         card.id = item.code;
         card.style.background = getBackgroundColor(item.code);
         card.style.color = getFontColor(item.code);
-        card.onclick = () => nextStep(step);
+        card.onclick = () => nextStep(step, item.code);
 
         const span = document.createElement('span');
 
@@ -79,5 +79,39 @@ function createCard(data, step, type) {
 
         card.appendChild(span);
         cardContainer.appendChild(card);
+    });
+}
+
+function createListCard(data, step) {
+
+    const code = localStorage.getItem('code');
+
+    data.forEach(item => {
+        item.forEach(sItem => {
+
+            if(sItem.parent_code === code) {
+
+                const card = document.createElement('div');
+
+                card.className = 'card-item';
+                card.id = item.code;
+                card.style.background = getBackgroundColor(sItem.code);
+                card.style.color = getFontColor(sItem.code);
+                card.style.border = `solid 1px ${getBorderColor(sItem.code)}`;
+                card.onclick = () => nextStep(step, sItem.code);
+
+                const icon = document.createElement('i');
+                icon.className = sItem.icon_html;
+                icon.style.color = getIconColor(sItem.code);
+                card.appendChild(icon);
+
+                const span = document.createElement('span');
+                span.className = 'category-span'
+                span.innerText = sItem.ko_name;
+                card.appendChild(span);
+
+                cardContainer.appendChild(card);
+            }
+        });
     });
 }
