@@ -29,5 +29,19 @@
     "en_name": "",
     "icon_url": "",
     "icon_html": "fa-solid fa-heart fa-2x"
+  },{
+    "code": "005",
+    "parent_code": "005",
+    "ko_name": "부동산",
+    "en_name": "",
+    "icon_url": "",
+    "icon_html": "fa-solid fa-house fa-2x"
+  },{
+    "code": "006",
+    "parent_code": "006",
+    "ko_name": "금융",
+    "en_name": "",
+    "icon_url": "",
+    "icon_html": "fa-solid fa-piggy-bank fa-2x"
   }]
 }

@@ -35,65 +35,77 @@ const codeColor = [{
     borderColor : '#cecece',
     iconColor : '#a1a1a1'
 },{
-    code : '001001',
-    background : '#cee9fd',
-    color : '#419aff',
+    code : '005',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
+},{
+    code : '006',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
+},{
+    code : '001001',
+    background : '#ffffff',
+    color : '#4b4b4b',
+    borderColor : '#cecece',
+    iconColor : '#a1a1a1'
 },{
     code : '001002',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '002001',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '002002',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '002003',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '002004',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '003001',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '003002',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '004001',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 },{
     code : '004002',
-    background : '#cee9fd',
-    color : '#419aff',
+    background : '#ffffff',
+    color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#a1a1a1'
 }];
 
 function getBackgroundColor(code) {

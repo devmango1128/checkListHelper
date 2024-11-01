@@ -9,7 +9,7 @@
         "ko_name": "국내",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-person-walking-luggage fa-2xl"
+        "icon_html": "fa-solid fa-person-walking fa-2x"
       },
       {
         "code": "001002",
@@ -17,7 +17,7 @@
         "ko_name": "해외",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-plane fa-2xl"
+        "icon_html": "fa-solid fa-plane fa-2x"
       }
     ],
     [
@@ -27,7 +27,7 @@
         "ko_name": "일간",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-calendar-days fa-2xl"
+        "icon_html": "fa-solid fa-calendar-days fa-2x"
       },
       {
         "code": "002002",
@@ -35,7 +35,7 @@
         "ko_name": "주간",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-calendar-week fa-2xl"
+        "icon_html": "fa-solid fa-calendar-week fa-2x"
       },
       {
         "code": "002003",
@@ -43,7 +43,7 @@
         "ko_name": "월간",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-calendar fa-2xl"
+        "icon_html": "fa-solid fa-calendar fa-2x"
       },
       {
         "code": "002004",
@@ -51,7 +51,7 @@
         "ko_name": "연간",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-regular fa-calendar-check fa-2xl"
+        "icon_html": "fa-regular fa-calendar-check fa-2x"
       }
     ],
     [
@@ -61,7 +61,7 @@
         "ko_name": "학습",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-pen-to-square fa-2xl"
+        "icon_html": "fa-solid fa-pen-to-square fa-2x"
       },
       {
         "code": "003002",
@@ -69,7 +69,7 @@
         "ko_name": "취미",
         "en_name": "",
         "icon_url": "",
-        "icon_html": "fa-solid fa-basketball fa-2xl"
+        "icon_html": "fa-solid fa-basketball fa-2x"
       }
     ],
     [

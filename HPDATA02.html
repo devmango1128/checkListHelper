@@ -9,9 +9,13 @@
 </head>
 <body>
 <div class="header-container">
-    <div class="empty"></div>
+    <div class="back" onclick="goMenu('HPDATA01.html')">
+        <i class="fa-solid fa-angle-left fa-xl"></i>
+    </div>
     <span onclick="goMenu('HPDATA00.html')">체크헬퍼</span>
-    <img src="src/images/menu_icon.png" alt="" class="menu" onclick="goMenu('menu.html')"/>
+    <div class="menu" onclick="goMenu('menu.html')">
+        <i class="fa-solid fa-bars fa-xl"></i>
+    </div>
 </div>
 <div class="content-container">
     <div id="card-container" class="card-container">
@@ -54,17 +58,19 @@
             data.data.forEach(item => {
                 item.forEach(sItem => {
                     if(sItem.parent_code === code) {
+
                         const card = document.createElement('div');
 
                         card.className = 'card-item';
-                        card.id = sItem.code;
+                        card.id = item.code;
                         card.style.background = getBackgroundColor(sItem.code);
                         card.style.color = getFontColor(sItem.code);
-                        card.onclick = () => nextStep('02');
+                        card.style.border = `solid 1px ${getBorderColor(sItem.code)}`;
+                        card.onclick = () => nextStep('02', sItem.code);
 
                         const icon = document.createElement('i');
                         icon.className = sItem.icon_html;
-                        icon.style.color = getFontColor(sItem.code);
+                        icon.style.color = getIconColor(sItem.code);
 
                         card.appendChild(icon);
 

@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="header-container">
-    <div class="back" onclick="goMenu('menu.html')">
+    <div class="back" onclick="goMenu('HPDATA00.html')">
         <i class="fa-solid fa-angle-left fa-xl"></i>
     </div>
     <span onclick="goMenu('HPDATA00.html')">체크헬퍼</span>
@@ -37,8 +37,8 @@
         $.getJSON(url, async function(data) {
 
             const cardContainer = document.getElementById('card-container');
-
             const animatedText = document.getElementById('animated-text');
+
             animatedText.textContent = '';
 
             let i = 0;
