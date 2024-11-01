@@ -165,6 +165,10 @@ textarea:focus {
     margin-bottom: 5px;
 }
 
+.card-container .card-item:active {
+    border: 1px solid #ff8c34 !important;
+}
+
 .card-container .selected:active {
     background-color: #ffffff !important;
 }
