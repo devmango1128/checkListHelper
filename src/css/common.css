@@ -290,3 +290,8 @@ textarea:focus {
     color: #fff;
 }
 
+.orange-btn:active {
+    background-color: #dc792d;
+    color: #fff;
+}
+
