@@ -36,49 +36,8 @@
 
         $.getJSON(url, async function(data) {
 
-            const cardContainer = document.getElementById('card-container');
-            const animatedText = document.getElementById('animated-text');
-
-            animatedText.textContent = '';
-
-            let i = 0;
-
-            function type() {
-                if (i < data.ko_title.length) {
-                    animatedText.textContent += data.ko_title.charAt(i);
-                    animatedText.classList.add('typing');
-                    i++;
-                    setTimeout(type, 150);
-                }
-            }
-
-            type();
-
-            data.data.forEach(item => {
-
-                const card = document.createElement('div');
-
-                card.className = 'card-item';
-                card.id = item.code;
-                card.style.background = getBackgroundColor(item.code);
-                card.style.color = getFontColor(item.code);
-                card.style.border = `solid 1px ${getBorderColor(item.code)}`;
-                card.onclick = () => nextStep('02', item.code);
-
-                const icon = document.createElement('i');
-                icon.className = item.icon_html;
-                icon.style.color = getIconColor(item.code);
-
-                card.appendChild(icon);
-
-                const span = document.createElement('span');
-                span.className = 'category-span'
-                span.innerText = item.ko_name;
-
-                card.appendChild(span);
-
-                cardContainer.appendChild(card);
-            });
+            typing(data.ko_title);
+            createCard(data.data, '02', 'ICON');
         });
     });
 </script>

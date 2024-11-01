@@ -32,7 +32,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', async function() {
 
-        const url = 'src/data/HPDATA02.json';
+        const url = 'src/data/HPDATA03.json';
         const code = localStorage.getItem('code');
 
         $.getJSON(url, async function(data) {
@@ -52,7 +52,7 @@
                         card.style.background = getBackgroundColor(sItem.code);
                         card.style.color = getFontColor(sItem.code);
                         card.style.border = `solid 1px ${getBorderColor(sItem.code)}`;
-                        card.onclick = () => nextStep('03', sItem.code);
+                        card.onclick = () => nextStep('04', sItem.code);
 
                         const icon = document.createElement('i');
                         icon.className = sItem.icon_html;
