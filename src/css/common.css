@@ -72,6 +72,7 @@ textarea:focus {
     font-size: 1em;
 }
 
+/*헤더*/
 .header-container {
     position: fixed;
     height: 50px;
@@ -115,6 +116,7 @@ textarea:focus {
     width: 40px;
 }
 
+/*내용*/
 .content-container {
     background-color: #e2e2e2;
     text-align: center;
@@ -127,6 +129,7 @@ textarea:focus {
     height: calc(100vh - 60px);
 }
 
+/*카드*/
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -199,6 +202,7 @@ textarea:focus {
     margin-top: 20px;
 }
 
+/*메뉴*/
 .menu-container {
     font-family: 'NanumGothicExtraBold', sans-serif;
     background-color: #e5e5e5;
@@ -252,5 +256,37 @@ textarea:focus {
     border-bottom: 1px solid #e5e5e5;
     margin: 0 0 10px 0;
     padding: 0;
+}
+
+/*안내문구*/
+.info-container {
+    width: 100%;
+    display: flex;
+    margin-left: 5px;
+}
+
+.info-container span {
+    display: inline-block;
+    text-align: left;
+    color: #fd6c53;
+    font-size: 0.6rem;
+}
+
+/*button*/
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-container div.middle-btn {
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.orange-btn {
+    background-color: #ff8c34;
+    color: #fff;
 }
 
