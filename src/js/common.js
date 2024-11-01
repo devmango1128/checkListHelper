@@ -100,7 +100,7 @@ function createListCard(data, step, multi) {
                 card.style.border = `solid 1px ${getBorderColor(sItem.code)}`;
 
                 if(multi) {
-                    card.onclick = () => multiClick(Event, sItem.code);
+                    card.addEventListener("click", (event) => multiClick(event, sItem.code));
                 } else {
                     card.onclick = () => nextStep(step, sItem.parent_code);
                 }
@@ -123,7 +123,7 @@ function createListCard(data, step, multi) {
 
 const multiArr = [];
 
-function multiClick(e, code) {
+function multiClick(event, code) {
 
     const index = multiArr.indexOf(code);
     const target = event.currentTarget;
@@ -136,4 +136,101 @@ function multiClick(e, code) {
         multiArr.splice(index, 1);
         target.classList.remove('selected');
     }
+}
+
+function goDetailView() {
+    localStorage.setItem('multiArr', multiArr.toString());
+    window.location.href = `detailCheck.html`;
+}
+
+function createDetail() {
+
+    const pageUrl = 'src/data/HPPAGEDATA.json';
+    const code = localStorage.getItem('code');
+
+    const qContainer = document.getElementById('question-container');
+
+    $.getJSON(pageUrl, async function(data) {
+
+        data.forEach(item => {
+            if(item.parent_code === code) {
+                item.data.forEach(sItem => {
+
+                    const titleDiv = document.createElement('div');
+                    titleDiv.className = 'title';
+                    titleDiv.innerText = sItem.ko_name;
+                    qContainer.appendChild(titleDiv);
+                    qContainer.appendChild(createList(sItem));
+                });
+            }
+        });
+    });
+}
+
+function createList(sItem) {
+
+    const listUrl = 'src/data/HPLISTDATA.json';
+    const listDiv = document.createElement('div');
+    listDiv.className = 'list';
+
+    $.getJSON(listUrl, async function(data) {
+        data.forEach(sData => {
+           if(sData.code === sItem.code) {
+               listDiv.appendChild(createElement(sItem, sData));
+           }
+        });
+    });
+
+    return listDiv;
+}
+
+function createElement(item, data) {
+
+    const eleDiv = document.createElement('div');
+    eleDiv.className = 'list';
+    // eleDiv.className = item.type;
+    console.log(item.type);
+    if(item.type === 'combo') {
+
+        const select = document.createElement('select');
+
+        data.list.forEach(sData => {
+
+            const option = document.createElement('option');
+            option.innerText = sData.ko_name;
+            select.appendChild(option);
+        });
+
+        eleDiv.appendChild(select);
+
+    } else if (item.type === 'radio' || item.type === 'checkbox') {
+
+        data.list.forEach(sData => {
+
+            const input = document.createElement('input');
+            input.type = item.type;
+            input.innerText = '';
+
+            eleDiv.appendChild(input);
+
+            const span = document.createElement('span');
+            span.type = 'span';
+            span.innerText = sData.ko_name
+            eleDiv.appendChild(span);
+        });
+
+    } else if(item.type === 'date') {
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        eleDiv.appendChild(input);
+
+    } else if(item.type === 'text') {
+
+        const input = document.createElement('input');
+        input.type = 'text';
+        eleDiv.appendChild(input);
+    }
+
+    return eleDiv;
 }

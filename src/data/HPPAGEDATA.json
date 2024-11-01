@@ -1,0 +1,41 @@
+[{
+  "code": "001001001001",
+  "parent_code" : "001",
+  "data" : [
+    {
+      "code": "Q001",
+      "ko_name" : "지역",
+      "en_name" : "",
+      "type" : "combo",
+      "key" : "A001"
+    },
+    {
+      "code": "Q002",
+      "ko_name" : "출발일",
+      "en_name" : "",
+      "type" : "date",
+      "key" : "A002"
+    },
+    {
+      "code": "Q003",
+      "ko_name" : "숙박기간",
+      "en_name" : "",
+      "type" : "text",
+      "key" : "A003"
+    },
+    {
+      "code": "Q004",
+      "ko_name" : "이동수단",
+      "en_name" : "",
+      "type" : "checkbox",
+      "key" : "A004"
+    },
+    {
+      "code": "Q005",
+      "ko_name" : "이동수단유형",
+      "en_name" : "",
+      "type" : "checkbox",
+      "key" : "A005"
+    }
+  ]
+}]

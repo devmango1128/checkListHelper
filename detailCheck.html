@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="header-container">
-    <div class="back" onclick="goMenu('HPDATA02.html')">
+    <div class="back" onclick="goMenu('HPDATA03.html')">
         <i class="fa-solid fa-angle-left fa-xl"></i>
     </div>
     <span onclick="goMenu('HPDATA00.html')">체크헬퍼</span>
@@ -18,16 +18,9 @@
     </div>
 </div>
 <div class="content-container">
-    <div id="card-container" class="card-container">
-        <div class="title-area">
-            <span id="animated-text"></span>
-        </div>
-        <div class="info-container">
-            <span>* 체크하지 않으면 기본템플릿이 생성돼요.</span>
-        </div>
-    </div>
+    <div id="question-container" class="question-container"></div>
     <div class="btn-container">
-        <div class="orange-btn middle-btn" onclick="goDetailView();">
+        <div class="orange-btn middle-btn" onclick="goDetailView('04');">
             다음
         </div>
     </div>
@@ -40,11 +33,6 @@
 <script>
     document.addEventListener('DOMContentLoaded', async function() {
 
-        const url = 'src/data/HPDATA03.json';
-
-        $.getJSON(url, async function(data) {
-            typing(data.ko_title);
-            createListCard(data.data, '04', true);
-        });
+        createDetail();
     });
 </script>
