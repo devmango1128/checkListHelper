@@ -75,7 +75,7 @@ textarea:focus {
 .header-container {
     position: fixed;
     height: 50px;
-    background-color: #fff;
+    background-color: #ff8c34;
     width: 100%;
     max-width: 1023px;
     text-align: center;
@@ -90,7 +90,7 @@ textarea:focus {
 .header-container span {
     display: inline-block;
     font-weight: bold;
-    color: #282828;
+    color: #fff;
     font-size: 1.2rem;
     line-height: 50px;
     height: 50px;
