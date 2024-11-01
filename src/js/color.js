@@ -15,7 +15,7 @@ const codeColor = [{
     background : '#ffffff',
     color : '#4b4b4b',
     borderColor : '#cecece',
-    iconColor : '#ff8c34'
+    iconColor : '#c0c0c0'
 },{
     code : '002',
     background : '#ffffff',
