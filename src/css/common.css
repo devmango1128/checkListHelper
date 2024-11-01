@@ -161,6 +161,11 @@ textarea:focus {
     margin-bottom: 5px;
 }
 
+.card-container .selected i {
+    background-color: #ff8c34;
+    border: 1px solid #ff8c34;
+}
+
 .card-container img.card-img {
     padding: 10px;
     width: 35px;

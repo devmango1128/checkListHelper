@@ -82,7 +82,7 @@ function createCard(data, step, type) {
     });
 }
 
-function createListCard(data, step) {
+function createListCard(data, step, multi) {
 
     const code = localStorage.getItem('code');
 
@@ -94,11 +94,16 @@ function createListCard(data, step) {
                 const card = document.createElement('div');
 
                 card.className = 'card-item';
-                card.id = item.code;
+                card.id = sItem.code;
                 card.style.background = getBackgroundColor(sItem.code);
                 card.style.color = getFontColor(sItem.code);
                 card.style.border = `solid 1px ${getBorderColor(sItem.code)}`;
-                card.onclick = () => nextStep(step, sItem.parent_code);
+
+                if(multi) {
+                    card.onclick = () => multiClick(Event, sItem.code);
+                } else {
+                    card.onclick = () => nextStep(step, sItem.parent_code);
+                }
 
                 const icon = document.createElement('i');
                 icon.className = sItem.icon_html;
@@ -109,9 +114,26 @@ function createListCard(data, step) {
                 span.className = 'category-span'
                 span.innerText = sItem.ko_name;
                 card.appendChild(span);
-                console.log(card);
+
                 cardContainer.appendChild(card);
             }
         });
     });
+}
+
+const multiArr = [];
+
+function multiClick(e, code) {
+
+    const index = multiArr.indexOf(code);
+    const target = event.currentTarget;
+
+    if (index === -1) {
+        multiArr.push(code);
+        target.classList.add('selected');
+
+    } else {
+        multiArr.splice(index, 1);
+        target.classList.remove('selected');
+    }
 }
